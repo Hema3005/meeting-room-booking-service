@@ -17,7 +17,7 @@ Node.js API for managing meeting rooms, bookings, cancellations, and room utiliz
 - Node.js
 - Fastify
 - PostgreSQL
-- Jest + Supertest
+- Jest
 
 ## Project Structure
 
