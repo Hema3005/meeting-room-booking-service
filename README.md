@@ -33,6 +33,7 @@ src/
   db/
 tests/
 DESIGN.md
+README.ms
 env_template
 ```
 
@@ -74,7 +75,7 @@ On startup, the app:
 
 The API listens on `http://localhost:3000` by default.
 
-Swagger UI:
+**Swagger UI:**
 
 ```text
 http://localhost:3000/docs
@@ -173,25 +174,6 @@ Run:
 
 ```bash
 npm test
-```
-
-Coverage:
-
-```bash
-npm run coverage
-```
-
-Important test caveats:
-
-- tests use the real PostgreSQL connection from `.env`
-- tests are integration-style and do not mock the database
-- tests assume a room with `id = 1` already exists, so a fresh database may need a room inserted before the suite passes
-
-Example room seed:
-
-```sql
-INSERT INTO rooms (name, capacity, floor, amenities)
-VALUES ('Test Room', 6, 1, ARRAY['tv']);
 ```
 
 ## License
