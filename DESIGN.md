@@ -91,7 +91,6 @@ hours** - Booking allowed **Mon--Fri between 08:00--20:00**
 | organizer_email  | TEXT      | Email of the booking organizer                |
 | idempotency_key  | TEXT      | Unique key to ensure idempotent booking calls |
 | booking_id       | INTEGER   | Associated booking ID                         |
-| status           | TEXT      | Status of the request (e.g., pending/success) |
 | created_at       | TIMESTAMP | Timestamp when the record was created         |
 
 **Constraints**
